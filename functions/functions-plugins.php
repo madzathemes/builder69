@@ -1,9 +1,9 @@
-<?php 
+<?php
 /**
  * Include the TGM_Plugin_Activation class.
  */
 require get_template_directory() .'/all_plugins/class-tgm-plugin-activation.php';
- 
+
 add_action( 'tgmpa_register', 'builder69_register_required_plugins' );
 /**
  * Register the required plugins for this theme.
@@ -18,20 +18,20 @@ add_action( 'tgmpa_register', 'builder69_register_required_plugins' );
  * TGM_Plugin_Activation class constructor.
  */
 function builder69_register_required_plugins() {
- 
+
     /**
      * Array of plugin arrays. Required keys are name, slug and required.
      * If the source is NOT from the .org repo, then source is also required.
      */
     $plugins = array(
- 
+
         // This is an example of how to include a plugin pre-packaged with a theme
          array(
             'name'			=> 'WPBakery Visual Composer', // The plugin name
             'slug'			=> 'js_composer', // The plugin slug (typically the folder name)
             'source'			=> get_stylesheet_directory() . '/all_plugins/js_composer.zip', // The plugin source
             'required'			=> true, // If false, the plugin is only 'recommended' instead of required
-            'version'			=> '4.2.2', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'version'			=> '4.12', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
             'force_activation'		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
             'external_url'		=> '', // If set, overrides default API URL and points to an external URL
@@ -56,7 +56,7 @@ function builder69_register_required_plugins() {
             'slug'			=> 'revslider', // The plugin slug (typically the folder name)
             'source'			=> get_stylesheet_directory() . '/all_plugins/revslider.zip', // The plugin source
             'required'			=> true, // If false, the plugin is only 'recommended' instead of required
-            'version'			=> '4.6.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'version'			=> '5.2.6', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
             'force_activation'		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
             'external_url'		=> '', // If set, overrides default API URL and points to an external URL
@@ -76,7 +76,7 @@ function builder69_register_required_plugins() {
             'slug'			=> 'Ultimate_VC_Addons', // The plugin slug (typically the folder name)
             'source'			=> get_stylesheet_directory() . '/all_plugins/Ultimate_VC_Addons.zip', // The plugin source
             'required'			=> true, // If false, the plugin is only 'recommended' instead of required
-            'version'			=> '1.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'version'			=> '3.16.6', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
             'force_activation'		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
             'external_url'		=> '', // If set, overrides default API URL and points to an external URL
@@ -86,17 +86,17 @@ function builder69_register_required_plugins() {
             'slug'			=> 'essential-grid', // The plugin slug (typically the folder name)
             'source'			=> get_stylesheet_directory() . '/all_plugins/essential-grid.zip', // The plugin source
             'required'			=> true, // If false, the plugin is only 'recommended' instead of required
-            'version'			=> '1.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'version'			=> '2.1.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
             'force_activation'		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
             'external_url'		=> '', // If set, overrides default API URL and points to an external URL
         )
- 
+
     );
- 
+
     // Change this to your theme text domain, used for internationalising strings
     $theme_text_domain = 'builder69';
- 
+
     /**
      * Array of configuration settings. Amend each line as needed.
      * If you want the default strings to be available under your own theme domain,
@@ -132,9 +132,9 @@ function builder69_register_required_plugins() {
             'complete'                                  => esc_html__( 'All plugins installed and activated successfully. %s', 'builder69' ) // %1$s = dashboard link
         )
     );
- 
+
     tgmpa( $plugins, $config );
- 
+
 }
 
 ?>

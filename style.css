@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*-----------------------------------------------------------------------------------
-	Version: 1.9
+	Version: 2.0
     Theme Name: builder69
     Theme URI: http://themeforest.net/user/madza
     Description: Theme For All
@@ -2752,7 +2752,7 @@ margin-bottom: 0!important;
 @media (max-width: 1200px){
 		.mt_footer_parallax_on.layout_style_full #mb-content { margin-bottom: 0px!important; }
 		.mt_footer_parallax_on.layout_style_border #mb-content { margin-bottom: 0px!important; }
-		
+
 }
 @media (min-width: 1320px){
 		.layout_style_box .mt_wrap{ width: 1320px; margin-left: auto; margin-right: auto; overflow: hidden; position: relative }
@@ -2761,24 +2761,24 @@ margin-bottom: 0!important;
 @media (min-width: 1200px){
 		.mt_footer_parallax_on.layout_style_full #footer_wrap { position:fixed; bottom:0px; z-index: -2; width: 100%; }
 		.mt_footer_parallax_on.layout_style_border #footer_wrap { border-bottom:0px solid silver; left: 0px!important; right: 0px!important; position:fixed; bottom:0px; z-index: -2; width: auto; }
-		
+
 		.mt_header_parallax_on .mt-header { position: fixed!important;  width: auto; z-index: 1; left:0px; right:0px; top:0px; }
 		.admin-bar.mt_header_parallax_on .mt-header { top:32px;}
 }
  @media (min-width: 1300px){
 	 	.mt_header_parallax_on.layout_style_border .mt-header { left:50px; right:50px; border-top:50px solid silver; }
 	 	.admin-bar.mt_header_parallax_on.layout_style_border .mt-header { top:32px;}
-	 
+
 		.layout_style_border  .mt_wrap { border-width: 50px; border-style: solid; border-color: #f0f0f0 }
 
 		.layout_style_border .mt_menu_fixed {left: 0px!important; right: 0px!important; position: relative }
-		
+
 		.mt_footer_parallax_on.layout_style_border #footer_wrap { border-bottom:50px solid silver; left: 50px!important; right: 50px!important; position:fixed; bottom:0px; z-index: -2; width: auto; }
 
 		.mt-fixed.mt-fixed-fix.layout_style_border .mt_menu_fixed {left: 50px!important; right: 50px!important }
 
 		.layout_style_border.mt-fixed-fix.mt-fixed.mt-down .mt-m-frame.mt-desctop .mt-mm { margin-top: -50px }
-		
+
 }
 
 
@@ -3715,7 +3715,7 @@ h4.vc_tta-panel-title  { font-size: 18px!important }
       -ms-transition: margin 300ms ease;
           transition: margin 300ms ease;
 }
- 
+
 .mt_sc_post_img_b:hover a img {
   margin-left: -20px;
 }
